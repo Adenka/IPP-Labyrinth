@@ -1,0 +1,12 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/j/Documents/IPP/JagodaBobinskaMaleZadanie'
+gcc -g -Wall -Wextra -Wno-implicit-fallthrough -std=c17 -O2 -c kolejka.c
+gcc -g -Wall -Wextra -Wno-implicit-fallthrough -std=c17 -O2 -c bitset.c
+gcc -g -Wall -Wextra -Wno-implicit-fallthrough -std=c17 -O2 -c hex.c
+gcc -g -Wall -Wextra -Wno-implicit-fallthrough -std=c17 -O2 -c ciag.c
+gcc  -c wejscie.c
+gcc  -c main.c
+gcc -g -Wall -Wextra -Wno-implicit-fallthrough -std=c17 -O2 -c pomocnicze.c
+gcc -g -Wall -Wextra -Wno-implicit-fallthrough -std=c17 -O2 -o labyrinth kolejka.o bitset.o hex.o ciag.o wejscie.o main.o pomocnicze.o
+make: Leaving directory '/home/j/Documents/IPP/JagodaBobinskaMaleZadanie'
+ 
